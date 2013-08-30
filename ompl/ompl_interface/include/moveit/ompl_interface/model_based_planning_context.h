@@ -237,6 +237,8 @@ public:
 
   void setPlanningVolume(const moveit_msgs::WorkspaceParameters &wparams);
 
+  void setPlanningScene(const planning_scene::PlanningSceneConstPtr &planning_scene);
+
   void setCompleteInitialState(const robot_state::RobotState &complete_initial_robot_state);
 
   bool setGoalConstraints(const std::vector<moveit_msgs::Constraints> &goal_constraints,
